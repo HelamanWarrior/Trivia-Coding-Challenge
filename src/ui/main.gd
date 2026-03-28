@@ -1,18 +1,17 @@
 extends Control
 
-var pop_up: PackedScene = preload("res://src/ui/pop_up/pop_up.tscn")
-
 @onready var question: Label = $Question
 
-func _ready() -> void:
-	GameEvent.create_pop_up.connect(_instance_pop_up)
-	GameEvent.trivia_data_update.connect(_trivia_data_update)
+@onready var answer_1: Button = $GridContainer/Answer1
+@onready var answer_2: Button = $GridContainer/Answer2
+@onready var answer_3: Button = $GridContainer/Answer3
+@onready var answer_4: Button = $GridContainer/Answer4
 
-func _instance_pop_up(message: String, button_text: String) -> void:
-	var pop_up_instance: PanelContainer = pop_up.instantiate()
-	add_child(pop_up_instance)
-	pop_up_instance.message_label.text = message
-	pop_up_instance.confirm_button.text = button_text
+func _ready() -> void:
+	GameEvent.trivia_data_update.connect(_trivia_data_update)
+	
+	TriviaDB.make_api_request()
 
 func _trivia_data_update() -> void:
-	question.text = TriviaDB.filter_data_by_type(TriviaDB.trivia_data, "difficulty", "easy")[0]["question"]
+	#question.text = TriviaDB.load_current_question()
+	pass

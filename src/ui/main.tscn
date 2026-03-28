@@ -24,11 +24,45 @@ anchor_right = 1.0
 offset_bottom = 154.0
 grow_horizontal = 2
 theme_override_fonts/font = ExtResource("2_buou0")
-theme_override_font_sizes/font_size = 72
-text = "Hello world"
+theme_override_font_sizes/font_size = 52
+text = "..."
 horizontal_alignment = 1
 vertical_alignment = 1
 autowrap_mode = 3
 
 [node name="WorldEnvironment" type="WorldEnvironment" parent="." unique_id=1553915541]
 environment = SubResource("Environment_buou0")
+
+[node name="GridContainer" type="GridContainer" parent="." unique_id=871863866]
+layout_mode = 1
+anchors_preset = 8
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
+offset_left = -412.5
+offset_top = -74.0
+offset_right = 412.5
+offset_bottom = 239.00024
+grow_horizontal = 2
+grow_vertical = 2
+theme_override_constants/h_separation = 25
+theme_override_constants/v_separation = 25
+columns = 2
+
+[node name="Answer1" type="Button" parent="GridContainer" unique_id=2130204922]
+custom_minimum_size = Vector2(400, 140)
+layout_mode = 2
+autowrap_mode = 2
+
+[node name="Answer2" type="Button" parent="GridContainer" unique_id=820260511]
+custom_minimum_size = Vector2(400, 140)
+layout_mode = 2
+
+[node name="Answer3" type="Button" parent="GridContainer" unique_id=1747604181]
+custom_minimum_size = Vector2(400, 140)
+layout_mode = 2
+
+[node name="Answer4" type="Button" parent="GridContainer" unique_id=1602945317]
+custom_minimum_size = Vector2(400, 140)
+layout_mode = 2
