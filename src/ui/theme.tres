@@ -1,0 +1,17 @@
+[gd_resource type="Theme" format=3 uid="uid://d20b15gfkxylu"]
+
+[ext_resource type="FontFile" uid="uid://bnqc8avoribml" path="res://assets/fonts/Inter_18pt-Regular.ttf" id="1_l82kg"]
+[ext_resource type="Texture2D" uid="uid://j34yckjmvhed" path="res://assets/buttons/button_square_depth_border.png" id="2_x6c0i"]
+
+[sub_resource type="StyleBoxTexture" id="StyleBoxTexture_r7xqo"]
+texture = ExtResource("2_x6c0i")
+texture_margin_left = 10.0
+texture_margin_top = 18.0
+texture_margin_right = 10.0
+texture_margin_bottom = 18.0
+
+[resource]
+default_font = ExtResource("1_l82kg")
+default_font_size = 16
+Button/fonts/font = ExtResource("1_l82kg")
+Button/styles/normal = SubResource("StyleBoxTexture_r7xqo")

@@ -1,0 +1,8 @@
+[gd_scene format=3 uid="uid://dvkfm73uuyfbs"]
+
+[ext_resource type="Script" uid="uid://jouk7r265ebc" path="res://src/trivia_db/trivia_db.gd" id="1_w8ssk"]
+
+[node name="TriviaDB" type="Node" unique_id=1886398177]
+script = ExtResource("1_w8ssk")
+
+[node name="HTTPRequest" type="HTTPRequest" parent="." unique_id=164018990]

@@ -1,0 +1,41 @@
+[gd_scene format=3 uid="uid://lakna22jh1mb"]
+
+[ext_resource type="Script" uid="uid://lmuoswc5rtic" path="res://src/ui/pop_up/pop_up.gd" id="1_6yjqp"]
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_6yjqp"]
+bg_color = Color(0.60038817, 0.60038817, 0.60038817, 0)
+
+[node name="PopUp" type="PanelContainer" unique_id=667608221]
+custom_minimum_size = Vector2(550, 250)
+anchors_preset = 8
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
+offset_left = -275.0
+offset_top = -125.0
+offset_right = 275.0
+offset_bottom = 125.0
+grow_horizontal = 2
+grow_vertical = 2
+theme_override_styles/panel = SubResource("StyleBoxFlat_6yjqp")
+script = ExtResource("1_6yjqp")
+
+[node name="Panel" type="Panel" parent="." unique_id=1961386097]
+layout_mode = 2
+
+[node name="Label" type="Label" parent="." unique_id=34689436]
+layout_mode = 2
+text = "Hey! Look it's a pop-up"
+horizontal_alignment = 1
+vertical_alignment = 1
+
+[node name="HBoxContainer" type="HBoxContainer" parent="." unique_id=1407663088]
+layout_mode = 2
+alignment = 1
+
+[node name="Button" type="Button" parent="HBoxContainer" unique_id=792632313]
+custom_minimum_size = Vector2(200, 50)
+layout_mode = 2
+size_flags_vertical = 8
+text = "Ok"
