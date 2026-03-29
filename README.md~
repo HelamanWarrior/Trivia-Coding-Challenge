@@ -10,8 +10,7 @@ The trivia experience built with Godot 4.
 - **Category selection:** Up to six categories to choose from.
 
 ## 🚀 Getting Started
-[Play Online here](https://plug-world.com/trivia-coding-challenge/) the web build is hosted on my website.
-- Native builds such as Windows, Linux, MacOS are available upon exporting in the Godot Project.
+[Play Online here](https://plug-world.com/trivia-coding-challenge/)
 
 > **Developer Note:** This project was built with Godot 4.x. To explore the source, clone the repository and import `project.godot` into the Godot Engine.
 
