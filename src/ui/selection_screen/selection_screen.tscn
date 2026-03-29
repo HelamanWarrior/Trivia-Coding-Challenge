@@ -1,5 +1,6 @@
 [gd_scene format=3 uid="uid://b8y2fe42hxyux"]
 
+[ext_resource type="Theme" uid="uid://d20b15gfkxylu" path="res://src/ui/theme.tres" id="1_3pbkl"]
 [ext_resource type="FontFile" uid="uid://bwclg4ecv42id" path="res://assets/fonts/BebasNeue-Regular.ttf" id="1_81w7d"]
 [ext_resource type="Script" uid="uid://bjl2in3fedg0f" path="res://src/ui/selection_screen/selection_screen.gd" id="1_oom7b"]
 [ext_resource type="Script" uid="uid://c5vrnburdfpal" path="res://src/ui/selection_screen/trivia_selection_type_button.gd" id="3_4se74"]
@@ -11,6 +12,7 @@ anchor_right = 1.0
 anchor_bottom = 1.0
 grow_horizontal = 2
 grow_vertical = 2
+theme = ExtResource("1_3pbkl")
 script = ExtResource("1_oom7b")
 
 [node name="SelectionDescription" type="Label" parent="." unique_id=149305784]
@@ -47,6 +49,7 @@ size_flags_horizontal = 0
 size_flags_vertical = 4
 text = "Easy"
 script = ExtResource("3_4se74")
+value = "easy"
 
 [node name="MediumButton" type="Button" parent="DifficultyButtons" unique_id=1218916909]
 custom_minimum_size = Vector2(250, 125)
@@ -55,6 +58,7 @@ size_flags_horizontal = 8
 size_flags_vertical = 4
 text = "Medium"
 script = ExtResource("3_4se74")
+value = "medium"
 
 [node name="HardButton" type="Button" parent="DifficultyButtons" unique_id=469654379]
 custom_minimum_size = Vector2(250, 125)
@@ -63,6 +67,7 @@ size_flags_horizontal = 4
 size_flags_vertical = 8
 text = "Hard"
 script = ExtResource("3_4se74")
+value = "hard"
 
 [node name="CategoryButtons" type="GridContainer" parent="." unique_id=2124575928]
 layout_mode = 1
@@ -88,6 +93,7 @@ size_flags_horizontal = 0
 size_flags_vertical = 4
 text = "General"
 script = ExtResource("3_4se74")
+value = "General Knowledge"
 
 [node name="EntertainmentButton" type="Button" parent="CategoryButtons" unique_id=1648314657]
 custom_minimum_size = Vector2(250, 125)
@@ -96,6 +102,7 @@ size_flags_horizontal = 8
 size_flags_vertical = 4
 text = "Entertainment"
 script = ExtResource("3_4se74")
+value = "Entertainment:"
 
 [node name="ScienceButton" type="Button" parent="CategoryButtons" unique_id=933558128]
 custom_minimum_size = Vector2(250, 125)
@@ -104,6 +111,7 @@ size_flags_horizontal = 4
 size_flags_vertical = 8
 text = "Science"
 script = ExtResource("3_4se74")
+value = "Science:"
 
 [node name="HistoryButton" type="Button" parent="CategoryButtons" unique_id=1155726560]
 custom_minimum_size = Vector2(250, 125)
@@ -112,6 +120,7 @@ size_flags_horizontal = 4
 size_flags_vertical = 8
 text = "History"
 script = ExtResource("3_4se74")
+value = "History"
 
 [node name="SportsButton" type="Button" parent="CategoryButtons" unique_id=166087950]
 custom_minimum_size = Vector2(250, 125)
@@ -120,11 +129,13 @@ size_flags_horizontal = 4
 size_flags_vertical = 8
 text = "Sports"
 script = ExtResource("3_4se74")
+value = "Sports"
 
-[node name="ArtButton" type="Button" parent="CategoryButtons" unique_id=1600458888]
+[node name="GeographyButton" type="Button" parent="CategoryButtons" unique_id=1600458888]
 custom_minimum_size = Vector2(250, 125)
 layout_mode = 2
 size_flags_horizontal = 4
 size_flags_vertical = 8
-text = "Art"
+text = "Geography"
 script = ExtResource("3_4se74")
+value = "Geography"

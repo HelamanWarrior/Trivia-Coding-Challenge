@@ -1,0 +1,8 @@
+[gd_scene format=3 uid="uid://bwkhcany8g8qg"]
+
+[ext_resource type="Script" uid="uid://bhs5drts2i6c" path="res://src/ui/answer_button/answer_button.gd" id="1_jgk2m"]
+
+[node name="AnswerButton" type="Button" unique_id=1194743128]
+custom_minimum_size = Vector2(400, 140)
+autowrap_mode = 2
+script = ExtResource("1_jgk2m")

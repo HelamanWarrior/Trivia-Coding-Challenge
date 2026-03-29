@@ -2,6 +2,14 @@
 
 [ext_resource type="FontFile" uid="uid://bnqc8avoribml" path="res://assets/fonts/Inter_18pt-Regular.ttf" id="1_l82kg"]
 [ext_resource type="Texture2D" uid="uid://j34yckjmvhed" path="res://assets/buttons/button_square_depth_border.png" id="2_x6c0i"]
+[ext_resource type="Texture2D" uid="uid://bt0l7dt2r1bmc" path="res://assets/buttons/button_square_border.png" id="3_r7xqo"]
+
+[sub_resource type="StyleBoxTexture" id="StyleBoxTexture_cwe5m"]
+texture = ExtResource("2_x6c0i")
+texture_margin_left = 10.0
+texture_margin_top = 10.0
+texture_margin_right = 10.0
+texture_margin_bottom = 10.0
 
 [sub_resource type="StyleBoxTexture" id="StyleBoxTexture_r7xqo"]
 texture = ExtResource("2_x6c0i")
@@ -10,10 +18,19 @@ texture_margin_top = 18.0
 texture_margin_right = 10.0
 texture_margin_bottom = 18.0
 
+[sub_resource type="StyleBoxTexture" id="StyleBoxTexture_lf7dv"]
+texture = ExtResource("3_r7xqo")
+texture_margin_left = 10.0
+texture_margin_top = 10.0
+texture_margin_right = 10.0
+texture_margin_bottom = 10.0
+
 [resource]
 default_font = ExtResource("1_l82kg")
 default_font_size = 16
 Button/colors/font_color = Color(0.0687985, 0.0687982, 0.06879826, 1)
 Button/font_sizes/font_size = 18
 Button/fonts/font = ExtResource("1_l82kg")
+Button/styles/hover = SubResource("StyleBoxTexture_cwe5m")
 Button/styles/normal = SubResource("StyleBoxTexture_r7xqo")
+Button/styles/pressed = SubResource("StyleBoxTexture_lf7dv")
