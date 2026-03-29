@@ -2,4 +2,6 @@
 
 The trivia experience built with Godot 4.
 
-![Game Titlescreen](/assets/background/title_image.jpg)
+![Game Titlescreen](title_image.jpg)
+
+- **Real-time Data:** Fetches questions dynamically from the OpenTDB API.
