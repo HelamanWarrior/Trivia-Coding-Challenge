@@ -2,4 +2,4 @@
 
 The trivia experience built with Godot 4.
 
-![Game Titlescreen](assets/background/title_screen_backround.jpg)
+![Game Titlescreen](/assets/background/title_screen_background.jpg)
