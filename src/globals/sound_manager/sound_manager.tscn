@@ -1,6 +1,13 @@
 [gd_scene format=3 uid="uid://0gso2lnwuf2u"]
 
 [ext_resource type="Script" uid="uid://drmojnbvgtcrv" path="res://src/globals/sound_manager/sound_manager.gd" id="1_ilmit"]
+[ext_resource type="AudioStream" uid="uid://bik47lrwv8fhe" path="res://assets/background/background_song.mp3" id="2_bhqrk"]
 
 [node name="SoundManager" type="Node" unique_id=2018028528]
 script = ExtResource("1_ilmit")
+
+[node name="BackgroundMusic" type="AudioStreamPlayer" parent="." unique_id=1501620318]
+stream = ExtResource("2_bhqrk")
+volume_db = -12.0
+autoplay = true
+parameters/looping = true

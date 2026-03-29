@@ -66,6 +66,7 @@ func _on_correct_answer() -> void:
 	if no_click:
 		return
 	
+	SoundManager.play_sound(SoundManager.confirmation_sound, randf_range(0.8, 1.2), 1)
 	TriviaDB.current_score += 1
 	display_correct_answer()
 	allow_proceed_timer.start()
@@ -78,6 +79,7 @@ func _on_incorrect_answer() -> void:
 	if no_click:
 		return
 	
+	SoundManager.play_sound(SoundManager.error_sound, randf_range(0.8, 1.2), 1)
 	display_correct_answer()
 	allow_proceed_timer.start()
 

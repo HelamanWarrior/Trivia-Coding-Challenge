@@ -8,6 +8,8 @@ const SELECTION_SCREEN = "res://src/ui/selection_screen/selection_screen.tscn"
 func _ready() -> void:
 	play_button.pressed.connect(_on_play_pressed)
 	quit_button.pressed.connect(_on_quit_pressed)
+	
+	SoundManager.play_background_music()
 
 func _on_play_pressed() -> void:
 	SoundManager.play_sound(SoundManager.select_sound, randf_range(0.8, 1.2), 1)

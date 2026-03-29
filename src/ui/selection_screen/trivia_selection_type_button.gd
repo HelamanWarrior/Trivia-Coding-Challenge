@@ -12,4 +12,5 @@ func _on_pressed() -> void:
 		GameEvent.emit_signal("updated_difficulty")
 	elif "Category" in get_parent().name:
 		TriviaDB.category = value
+		SoundManager.background_music.stop()
 		get_tree().change_scene_to_file("res://src/ui/main.tscn")

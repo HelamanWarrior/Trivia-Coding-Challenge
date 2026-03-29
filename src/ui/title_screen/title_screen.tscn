@@ -4,7 +4,6 @@
 [ext_resource type="Script" uid="uid://cq2hsabgd8rwp" path="res://src/ui/title_screen/title_screen.gd" id="1_6tf2u"]
 [ext_resource type="FontFile" uid="uid://bwclg4ecv42id" path="res://assets/fonts/BebasNeue-Regular.ttf" id="1_xpp5k"]
 [ext_resource type="Texture2D" uid="uid://c5u6y1waj8ffj" path="res://assets/background/title_screen_background.jpg" id="4_30oc4"]
-[ext_resource type="AudioStream" uid="uid://bik47lrwv8fhe" path="res://assets/background/background_song.mp3" id="5_vutd3"]
 
 [node name="TitleScreen" type="Control" unique_id=2094124137]
 layout_mode = 3
@@ -70,9 +69,3 @@ offset_bottom = 165.0
 grow_horizontal = 0
 grow_vertical = 2
 text = "Quit game."
-
-[node name="AudioStreamPlayer" type="AudioStreamPlayer" parent="." unique_id=1549886801]
-stream = ExtResource("5_vutd3")
-volume_db = -12.0
-autoplay = true
-parameters/looping = true

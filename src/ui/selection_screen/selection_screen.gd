@@ -9,6 +9,8 @@ func _ready() -> void:
 	
 	difficulty_buttons.show()
 	category_buttons.hide()
+	
+	SoundManager.play_background_music()
 
 func _updated_difficulty() -> void:
 	difficulty_buttons.hide()

@@ -1,6 +1,7 @@
 extends Control
 
 const SELECTION_SCENE: String = "res://src/ui/selection_screen/selection_screen.tscn"
+const TITLE_SCENE: String = "res://src/ui/title_screen/title_screen.tscn"
 
 const RANKS: Array = [
 	"THE BLANK SLATE",     # 0
@@ -41,6 +42,8 @@ func _ready() -> void:
 	retry_button.pressed.connect(_on_retry_pressed)
 	quit_button.pressed.connect(_on_quit_pressed)
 	
+	SoundManager.play_background_music()
+	
 	var score: int = clampi(TriviaDB.current_score, 0, RANKS.size() - 1)
 	var rank = RANKS[score]
 	var message = MESSAGES[score]
@@ -58,4 +61,4 @@ func _on_retry_pressed() -> void:
 
 func _on_quit_pressed() -> void:
 	SoundManager.play_sound(SoundManager.select_sound, randf_range(0.8, 1.2), 1)
-	get_tree().quit()
+	get_tree().change_scene_to_file(TITLE_SCENE)
